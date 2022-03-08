@@ -1,0 +1,8 @@
+{% extends "base/base.html"%}
+{% block body %}
+<h2>Add Username</h2>
+<from action="{% url 'add'}" method="post">
+    <input type="text" name="username"><br>
+    <input type="Submit">
+</from>
+{% endblock %}

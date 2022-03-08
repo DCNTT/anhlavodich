@@ -1,0 +1,23 @@
+{% extends "base/base.html"%}
+{% block body %}
+<h1>新規登録</h1>
+<form action="reg" method="post">
+     {% csrf_token%}
+     
+     <label>First Name</label><br>
+     <input type="text" name="first_name" placeholder="First Name" required><br>
+     <label>Last Name</label><br>
+     <input type="text" name="last_name" placeholder="Last Name" required><br>
+     <label>Username</label><br>
+     <input type="text" name="username" placeholder="Username" required><br>
+     <label>Email</label><br>
+     <input type="email" name="email" placeholder="Email" required><br>
+     <label>Password</label><br>
+     <input type="password" name="password1" placeholder="Password" required><br>
+     <label>re_password</label><br>
+     <input type="password" name="password2" placeholder=" Confirm Password" required><br>
+     <input type ="submit">
+</form>
+<a href="{% url 'login' %}">Login</a>
+
+{% endblock %}
