@@ -1,6 +1,6 @@
 
-#body{
-    background-color : rgb(197, 179, 179);
+body{
+    background-color : antiquewhite;
 }
 h1{
     text-align: center;
@@ -103,6 +103,9 @@ h2{
       }
       .wrapper ul li{
         margin: 15px 0;
+      }
+      .homestyle{
+        text-align: center;
       }
       .wrapper ul li a{
         color: none;

@@ -1,13 +1,17 @@
 {% extends "base/base.html"%}
 {% block body %}
 <h1>login</h1>
-<form>
-    <label>Username</label><br>
+<form> 
+    <center>
+    <label>Username</label>
+    <br>
     <input type="text" name="username" placeholder="Username" required><br>
-    <label>Password</label><br>
-    <input type="password" name="Password" placeholder="Password" required><br>
+    <label>Password</label>
+    <br>
+    <input type="password" name="Password" placeholder="Password" required>
+    <br>
     <input type="Submit">
-
+    </center>
 </form>
 <a href="{% url 'reg'%}">新規登録</a><br>
 <a href="{% url 'shift'%}">ホーム</a>
