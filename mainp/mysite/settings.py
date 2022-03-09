@@ -31,7 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    
+
+    'login',
+    'memo',
+    'register',
+    'shopmanage',
+    'submitShift', 
+    'editprofile',
+    'confirmShift',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
