@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import Loginform
 from django.views import View
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login , logout
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
@@ -23,8 +24,15 @@ class Login(View):
 
         if user is not None:
             login(request, user)
-            return HttpResponse('Login success!')
+            return render(request, 'base/home.html')
 
         else:
             return HttpResponse('Login fault !!!')
-    
+
+@login_required
+def Home(request):
+    return render(request, 'base/home.html')
+
+def Logout(request):
+    logout(request)
+    return redirect('Login')
