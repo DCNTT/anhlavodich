@@ -1,3 +1,2 @@
+from xml.etree.ElementInclude import include
 from django.test import TestCase
-
-# Create your tests here.

@@ -1,18 +1,27 @@
-{% extends "base/base.html"%}
-{% block body %}
-<h1>Login</h1>
-<form> 
-    <center>
-    <label>Username</label>
-    <br>
-    <input type="text" name="username" placeholder="Username" required><br>
-    <label>Password</label>
-    <br>
-    <input type="password" name="Password" placeholder="Password" required>
-    <br>
-    <input type="Submit">
-    </center>
-</form>
-<a href="{% url 'reg'%}">新規登録</a><br>
-<a href="{% url 'shift'%}">ホーム</a>
-{% endblock %}
+    {% extends "base/base.html"%}
+
+            {% block body %}
+
+        <h1>Login</h1>
+
+            <form action="#" method = 'post'> 
+                <center>
+                    {% csrf_token %}
+
+                    {{ Login.as_p}}
+
+                <br>
+
+                <input type="Submit">
+
+                
+
+            </form>
+
+            <br>
+            
+            <strong>If you don't have a Account , please <a href={% url 'register' %}>Register</a></strong>
+
+            </center>
+
+                {% endblock %}
