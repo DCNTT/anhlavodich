@@ -11,12 +11,44 @@
             <form action="." method='post'>
                 
                 {% csrf_token %}
+                
+                <label>Username : </label> 
 
-                    {{form.as_p}}
+                <br>
 
-                <input type ='submit' Value = "Register" />
+                    {{form.username}}
+
+                    <br>
+
+                    <label>Email : </label> 
+
+                <br>
+
+                    {{form.email}}
+
+                    <br>
+
+                    <label>Password : </label> 
+
+                <br>
+
+                {{form.password}}
+
+                <br>
+
+                <label>Confirmpassword : </label> 
+
+                <br>
+
+                {{form.conpassword}}
+
+                <br>
+
+                <input class="registerbut" type ='submit' Value = "Register" />
 
             </form>
+
+            <br>
 
             <strong>If you are member , please <a href= {% url 'Login' %}>Login </a></strong>
 

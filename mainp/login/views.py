@@ -36,3 +36,6 @@ def Home(request):
 def Logout(request):
     logout(request)
     return redirect('Login')
+
+def test(request):
+    return render(request, 'base/test.html')
