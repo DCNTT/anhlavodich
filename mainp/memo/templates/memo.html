@@ -1,4 +1,4 @@
-{% extends "chaty/main.html"%}
+{% extends "main.html"%}
 
 {% block body %} 
 {% for chat in chats  %}
@@ -6,7 +6,7 @@
 <div class="chat">
 <h2>{{chat.title}}</h2>
 <h4>{{chat.body}}</h4>
-<small>送信日時　： {{chat.posted_at}}</small>
+<small>送信日時　： {{chat.postime}}</small>
 </div>
 </div>
 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat/</title>
+    <h1>シフト管理システム</h1>
+    <br>
+</head>
+<a href="{% url 'new'%}">メモ</a>
+
+<body>
+    <div class ="re-home">
+        <a href="{% url 'home'%}">Return Home</a>
+    </div>
+    <style>
+        h1, a{
+            text-align: center;
+      color:rgb(204, 10, 10);
+        }
+        body {
+            background-color:rgb(238, 234, 230);
+    
+        }
+        .flexbox-container {
+            border-radius: 10px;
+            border: 7px solid block;
+            background-color: rgb(181, 194, 123);
+            margin: 30px;
+            margin: left 700px;
+            padding: 30px;
+            
+            flex-wrap: wrap;
+            left: 0;
+            transition: 2s;
+        }
+        .forms{
+            background-color:white;
+        }
+        h2{
+            color: blue;
+        }
+    </style>
+   <div class = "">
+       {% block body%}
+       
+       {% endblock %}
+   </div>
+</body>
+</html>
