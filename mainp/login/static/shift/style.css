@@ -15,12 +15,43 @@ h2{
     text-align: center;
     font-size: large;
 }
+
+
+.drop2{
+  position:absolute;
+}
+.drop3 a{
+  display: block;
+  text-decoration: none;
+  padding: 12px 15px;
+}
+.drop3 {
+  display:none;
+  position: absolute;
+}
+li {
+  float: left;
+}
+.drop1:hover .drop3{
+  display: block;
+}
+
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+
   overflow: hidden;
   background-color: #333;
+}
+
+li a, .drop2 {
+  display: inline-block;
+  color: white;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+li.drop1 {
+  display: inline-block;
 }
 form {
   width: 300px;
@@ -31,8 +62,10 @@ form {
 .registerbut {
   font-size: 20px;
 }
-
-li {
+.taskBar a {
+  float: 0;
+}
+.Taskbar li {
   float: left;
 }
 .Taskbar{
