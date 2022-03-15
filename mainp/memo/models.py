@@ -5,7 +5,7 @@ from django.db import models
 class Chat(models.Model):
     title = models.CharField(max_length=50)
     body = models.TextField(max_length = 255)
-    postime = models.DateField(auto_now_add=True)
+    postime = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering =  ['-postime']
