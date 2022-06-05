@@ -3,64 +3,62 @@
             {% block body %}
         
     
-        <ul class="Taskbar">
+        <ul class="sidenav">
             <li ><a href={% url "home" %}>Home</a></li>
             <li ><a href="#">Worktable</a></li>
-            <li ><a href="#">Contact</a></li>
-            <li ><a href={% url "Login" %}>Logout</a></li>
-            <li class="drop1">
+            <li ><a href = " {% url 'memo' %}">Memo</a></li>
+            
+            <li class="drop1" style="float:right; ">
                 <a href ="#" class="drop2">Menu</a>
                 <div class="drop3">
                     <a href ="#">Profile</a>
                     <a href ="#">Setting</a>
-                    <a href='#'>Logout</a>           
+                    <a href={% url "Login" %}>Logout</a>           
                 </div>
             </li>
-            <div class = "memo">
-                <a href = " {% url 'memo' %}">Memo</a>
-        </div>
         </ul>
         <br>
-        <p>Những cuốn sách hay nên đọc khi còn trẻ được định nghĩa là là những cuốn sách kinh điển nhất mọi thời đại. Sách được viết bởi những tác giả trẻ, những bộ óc văn học vĩ đại nhất, họ có những chủ đề, nhân vật, kinh nghiệm, cảm xúc và quan điểm sống luôn liên quan đến mỗi người chúng ta. Một số trong số họ là nguồn cảm hứng mà từ đó toàn bộ thể loại tiểu thuyết hay đã nảy sinh từ đó.
-
-            Nếu bạn đang còn trẻ giống như tôi, và là một người thích đọc sách, bạn sẽ không thể bỏ qua 20 cuốn sách hay nên đọc ít nhất một lần trong đời dưới đây. Chúng đều là những tác phẩm đã giúp thay đổi cuộc sống và suy nghĩ của hàng triệu độc giả trên khắp thế giới.
+        <div class='cleartest'>
+        
+         <img id="imgtest" src="../../static/shift/pineapple.jpg" title="Pineapple">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+        <div id = "hometest">
+        <h2>What is box-sizing? </h2>
+        <p>You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders)
+            , the box will break. <br>The <i>box-sizing </i> property allows us to include the apdding and border in the box's total width
+            (and height), making sure that the padding stays inside of the box and that it does not break.</p>
+            <p>You can read more about the box-sizing property in next chapter.
+        </p>
+        </div><br>
             
-            Có thể nói rằng đây là những cuốn sách hay nên đọc nhất mọi thời đại mà bút ký của người viết đã vượt qua được giới hạn thể loại cũng như các đối tượng độc giả ban đầu mà họ nhắm đến. Tôi gọi đó là những cuốn sách “Phép màu cuộc sống”.
-            
-            Nghe thật trừu tương nhưng chúng rất xứng đáng để bạn tìm đọc đấy.
-            
-            Khi chúng ta mệt mỏi, hãy nhớ đến lời răn dạy của các bậc trí giả. Khi chúng ta rơi vào đường cùng bế tắc, hãy lắng nghe tiếng lòng của người thông minh. Chắc chắn rằng trên con đường đi tới thành công của chúng ta không chỉ có cầu vồng lấp lánh mà có cả gió bão cản lối, nhưng có trí tuệ giúp sức, cuối cùng bạn sẽ vượt qua gió mưa và đến được với ánh sáng mặt trời ấm áp.
-            
-            Xem thêm: Máy đọc sách tốt nhất hiện nay.
-            Những bài học vô cùng quý giá của những người đi trước ấy chắc chắn sẽ giúp được bạn tìm ra những cách sống, kĩ năng sống tốt hơn trong cuộc sống đầy màu sắc này.
-            
-            Mục lục  ẩn <br>
             <ol>
-            <li>1 Những cuốn sách hay nên đọc trong đời (2021)</li>
+                <li>1 Những cuốn sách hay nên đọc trong đời (2021)</li>
                 <li>1.1 1. Đắc Nhân Tâm – Dale Carnegie</li>
-                    <li>1.2 2. Nhà giả kim – Paulo Coelho</li>
-                        <li>2 3. Tội Ác Và Hình Phạt – Fyodor Dostoevsky</li>
-                            <li>2.1 4. Mỗi lần vấp ngã là một lần Trưởng Thành</li>
-                                <li>2.2 5. Tuổi Trẻ Đáng Giá Bao Nhiêu? Rosie Nguyễn</li>
-                                    <li>2.3 6. Đời thay đổi khi chúng ta thay đổi – Andrew Matthews</li>
-                                        <li>2.4 7. Dạy Con Làm Giàu – Robert Kiyosaki</li>
-                                            <li>2.5 8. Những Tấm Lòng Cao Cả – Edmondo De Amicis</li>
-                                                <li>2.6 9. Nhà Lãnh Đạo không Chức Danh – Robin Sharma</li>
-                                                    <li>2.7 10. Cho tôi xin 1 vé đi tuổi thơ – Nguyễn Nhật Ánh</li>
-                                                        <li>2.8 11. Harry Potter – J. K. Rowling</li>
-                                                            <li>2.9 12. Cà Phê Cùng Tony</li>
-                                                                <li>2.10 13. Người bán hàng vĩ đại nhất thế giới – Og Mandino</li>
-                                                                    <li>2.11 14. Trump – Đừng Bao Giờ Bỏ Cuộc</li>
-                                                                        <li>2.12 15. Đừng Bao Giờ Đi Ăn Một Mình – Keith Ferrazzi</li>
-                                                                            <li>2.13 16. Bắt Trẻ Đồng Xanh – J.D.Salinger</li>
-                                                                                <li> 2.14 17. Ông Già Và Biển Cả – Hemingway</li>
-                                                                                    <li>2.15 18. Tỷ Phú Bán Giày – Tony Hsieh</li>
-                                                                                        <li>2.16 19. Đọc Vị Bất Kỳ Ai – David J.Lieberman</li>
-                                                                                            <li>2.17 20. Bố già – Mario Puzo</li>
-                                                                                                <li>2.18 21. Mặc Kệ Thiên Hạ, Sống Như Người Nhật – Mari Tamagawa</li>
-                                                                                                    <li>2.19 22. Cuốn Theo Chiều Gió (Gone With The Wind)</li>
+                <li>1.2 2. Nhà giả kim – Paulo Coelho</li>
+                <li>2 3. Tội Ác Và Hình Phạt – Fyodor Dostoevsky</li>
+                <li>2.1 4. Mỗi lần vấp ngã là một lần Trưởng Thành</li>
+                <li>2.2 5. Tuổi Trẻ Đáng Giá Bao Nhiêu? Rosie Nguyễn</li>
+                <li>2.3 6. Đời thay đổi khi chúng ta thay đổi – Andrew Matthews</li>
+                <li>2.4 7. Dạy Con Làm Giàu – Robert Kiyosaki</li>
+                <li>2.5 8. Những Tấm Lòng Cao Cả – Edmondo De Amicis</li>
+                <li>2.6 9. Nhà Lãnh Đạo không Chức Danh – Robin Sharma</li>
+                <li>2.7 10. Cho tôi xin 1 vé đi tuổi thơ – Nguyễn Nhật Ánh</li>
+                <li>2.8 11. Harry Potter – J. K. Rowling</li>
+                <li>2.9 12. Cà Phê Cùng Tony</li>
+                <li>2.10 13. Người bán hàng vĩ đại nhất thế giới – Og Mandino</li>
+                <li>2.11 14. Trump – Đừng Bao Giờ Bỏ Cuộc</li>
+                <li>2.12 15. Đừng Bao Giờ Đi Ăn Một Mình – Keith Ferrazzi</li>
+                <li>2.13 16. Bắt Trẻ Đồng Xanh – J.D.Salinger</li>
+                <li> 2.14 17. Ông Già Và Biển Cả – Hemingway</li>
+                <li>2.15 18. Tỷ Phú Bán Giày – Tony Hsieh</li>
+                <li>2.16 19. Đọc Vị Bất Kỳ Ai – David J.Lieberman</li>
+                <li>2.17 20. Bố già – Mario Puzo</li>
+                <li>2.18 21. Mặc Kệ Thiên Hạ, Sống Như Người Nhật – Mari Tamagawa</li>
+                <li>2.19 22. Cuốn Theo Chiều Gió (Gone With The Wind)</li>
             </ol>
-            3 Tóm tắt sách hay
+            <br>
+            <p> 3 Tóm tắt sách hay
             4 Cách đọc thêm nhiều sách
             Với những cuốn sách hay về kỹ năng sống, hạt giống tâm hồn, súp gà cho tâm hồn, sách self-help, phát triển bản thân, dạy con làm giàu, kỹ năng thành công, sống hạnh phúc… của iSachHay.net sẽ cung cấp cho độc giả những bài học về kĩ năng sống, nghệ thuật sống được nhiều tác giả và dịch giả nổi tiếng dịch lại hoặc biên soạn từ những câu chuyện có thật trong cuộc sống.
             
@@ -107,17 +105,5 @@
             Cuốn sách này như là kim chỉ nam cho những ai chưa tìm được phương hướng cho mình nhất là những người trẻ rằng giấc mơ của 1 người chính là định mệnh của người đó, và sự chối bỏ giấc mơ chính là từ bỏ định mệnh.
             
             Bạn có như tôi không? Nếu bạn chưa biết bạn làm gì cho cuộc sống hãy tìm đọc cuốn sách này ngay nhé!</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
             {% endblock %}

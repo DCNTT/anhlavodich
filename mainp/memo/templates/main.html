@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chat/</title>
-    <h1>シフト管理システム</h1>
+    <title>Notices</title>
+    <h1 class='header'>シフト管理システム</h1>
     <br>
 </head>
-<a href="{% url 'new'%}">メモ</a>
 
 <body>
-    <div class ="re-home">
-        <a href="{% url 'home'%}">Return Home</a>
-    </div>
+    <ul>
+            <div class ="taskmemo">
+                <li><a href="{% url 'home'%}">Return Home</a></li>
+                <li><a href="{% url 'new'%}">メモ</a></li>
+            </div>
+    </ul>
     <style>
-        h1, a{
+        .taskmemo {
+            border-radius: 14px;
+
+        }
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: darkcyan;
+            top: 0;
+            position: sticky;
+            position: -webkit-sticky;
+            border-radius: 14px;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: brown;
+        }
+        .header{
+            text-align: center;
+            padding:30px 20px;
+            background-color: brown;
+            border: 2px solid greenyellow;
+            color: white;
+            position: sticky;
+            position: -webkit-sticky;
+            border-radius: 35px;
+        }
+        a{
             text-align: center;
       color:rgb(204, 10, 10);
         }
@@ -24,7 +62,7 @@
     
         }
         .flexbox-container {
-            border-radius: 10px;
+            border-radius: 15px;
             border: 7px solid block;
             background-color: rgb(181, 194, 123);
             margin: 30px;

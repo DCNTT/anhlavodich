@@ -6,7 +6,8 @@ from .models import Chat
 class ChatForm(ModelForm):
     class Meta:
         model = Chat
-        fields = "__all__"
-        exclude = ('author',)
-        Widgets = { 'body': Textarea(),
+        fields = '__all__'
+        
+        widgets = {
+            'body': Textarea()
         }

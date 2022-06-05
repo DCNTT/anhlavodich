@@ -5,7 +5,9 @@ body{
 .header{
     text-align: center;
     padding:30px 20px;
+    border-radius: 35px;
     background-color: brown;
+    
     border: 2px solid greenyellow;
     color: white;
     position: sticky;
@@ -15,46 +17,67 @@ h2{
     text-align: center;
     font-size: large;
 }
-
-
-.drop2{
-  position:absolute;
+/* task bar */
+ul {
+  margin:0;
+  padding:0;
+   list-style-type: none;
+   border-radius: 14px;
+   overflow: hidden;
+   background-color:darkslategray;
+ }
+ li {
+  float: left;
 }
-.drop3 a{
-  display: block;
+
+li a , .drop2 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 17px;
   text-decoration: none;
-  padding: 12px 15px;
+}
+li a:hover , .drop1:hover .drop2{
+  background-color:red;
+}
+li.drop1 {
+  display:inline-block;
 }
 .drop3 {
   display:none;
   position: absolute;
+  background-color: sandybrown;
+  min-width: 160px;
+ 
+  z-index: 1;
 }
-li {
-  float: left;
+.drop3 a{
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
+
 .drop1:hover .drop3{
   display: block;
 }
 
-ul {
-  list-style-type: none;
 
-  overflow: hidden;
-  background-color: #333;
+
+
+
+
+li a:hover:not(.active) {
+  background-color:green;
+  color:white;
 }
 
-li a, .drop2 {
-  display: inline-block;
-  color: white;
-  padding: 14px 14px;
-  text-decoration: none;
-}
-
-li.drop1 {
-  display: inline-block;
+p i:first-child {
+  color:red;
 }
 form {
-  width: 300px;
+  width: 1000px;
   font-size: 20px;
   box-sizing: border-box;
   background-color: goldenrod;
@@ -65,21 +88,27 @@ form {
 .taskBar a {
   float: 0;
 }
-.Taskbar li {
+.cleartest {
   float: left;
+  border: 1px  royalblue;
+  border-style: dashed;
 }
-.Taskbar{
-  position: sticky;
-  top: 0;
+#imgtest{
+  clear: right;
 }
-.Taskbar a {
-  display: block;
+img {
+  opacity:0.2;
+}
+img:hover {
+  opacity:1.0;
+}
+#hometest {
+  width: 200;
+  overflow: auto;
+  height: 310px;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  background: green;
 }
 
-.Taskbar a:hover {
-  background-color: #111;
-}
+/* Screen size change */
+

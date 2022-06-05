@@ -5,8 +5,9 @@ from .models import Chat
 
 # Create your views here.
 def memo(request):
-    chats = Chat.objects.all().order_by('postime')
+    chats = Chat.objects.all().order_by('-postime')
     return render(request, 'memo.html', {'chats':chats})
+
 
 def new(request):
     if request.method == "POST":
